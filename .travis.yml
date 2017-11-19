@@ -4,5 +4,5 @@ python:
 install:
   - pip install -r requirements/requirements.txt
   - pip install -r requirements/dev.txt
-before_script:
+script:
   - flake8
