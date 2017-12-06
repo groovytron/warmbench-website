@@ -1,0 +1,25 @@
+// Fonts
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+//Variables
+$primary-color: #000;
+$primary-color-light: #000;
+
+// Materialize
+@import "node_modules/materialize-css/sass/materialize";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#banner-logo {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: block;
+}
