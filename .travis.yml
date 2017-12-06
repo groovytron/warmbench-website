@@ -22,6 +22,7 @@ after_success:
     test "${TRAVIS_PULL_REQUEST}" = "false" \
       && test "${TRAVIS_BRANCH}" = "master" \
       && ( \
+        cd build
         git init
         git config user.name "TravisCI"
         git config user.email "travis@warmbench.test"
