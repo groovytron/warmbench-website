@@ -1,0 +1,23 @@
+language: node_js
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+after_success:
+  - >
+    test "${TRAVIS_PULL_REQUEST}" = "false" \
+      && test "${TRAVIS_BRANCH}" = "master" \
+      && ( \
+        mkdir build
+        cp -r {index.html,css,js,images} build/
+        git init
+        git config user.name "TravisCI"
+        git config user.email "travis@warmbench.test"
+        git add .
+        git commit -m "Deployed to github pages"
+        git push -f -q "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}" master:gh-pages
+      ) \
+      || echo ":-)"
