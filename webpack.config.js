@@ -3,7 +3,6 @@ const path = require('path');
 const config = {
   entry: './js/warmbench.js',
   output: {
-    path: path.resolve(__dirname, 'build/js'),
     filename: 'webpack.bundle.js'
   },
   module: {

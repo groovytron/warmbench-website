@@ -13,18 +13,18 @@ gulp.task('index', function () {
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./build/css'));
+    .pipe(gulp.dest('./build/assets/css'));
 });
 
 gulp.task('js', function () {
   return gulp.src('./js/warmbench.js')
     .pipe(webpackStream(webpackConfig, webpack))
-    .pipe(gulp.dest('build/js/'));
+    .pipe(gulp.dest('./build/assets/js/'));
 });
 
 gulp.task('images', function() {
   return gulp.src('./images/*')
-    .pipe(gulp.dest('./build/images'));
+    .pipe(gulp.dest('./build/assets/images'));
 });
 
 gulp.task('watch', ['build'],function () {
