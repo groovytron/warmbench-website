@@ -1,4 +1,15 @@
-language: node_js
+dist: trusty
+sudo: required
+
+language: generic
+
+cache: apt
+
+addons:
+  apt:
+    packages:
+      - build-essential
+      - nodejs
 
 install:
   - npm install
@@ -11,8 +22,6 @@ after_success:
     test "${TRAVIS_PULL_REQUEST}" = "false" \
       && test "${TRAVIS_BRANCH}" = "master" \
       && ( \
-        mkdir build
-        cp -r {index.html,css,js,images} build/
         git init
         git config user.name "TravisCI"
         git config user.email "travis@warmbench.test"
