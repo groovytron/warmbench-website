@@ -27,6 +27,11 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./build/images'));
 });
 
+gulp.task('fonts', function() {
+  return gulp.src('./node_modules/materialize-css/dist/fonts/roboto/*')
+    .pipe(gulp.dest('./build/fonts/roboto'));
+});
+
 gulp.task('watch', ['build'],function () {
     // Serve files from the root of this project
     browserSync.init({
@@ -43,6 +48,6 @@ gulp.task('watch', ['build'],function () {
 });
 
 
-gulp.task('build', ['sass', 'js', 'images', 'index'], function () {});
+gulp.task('build', ['sass', 'js', 'images', 'index', 'fonts'], function () {});
 
 gulp.task('default', ['build'],function () {});
