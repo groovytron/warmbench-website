@@ -1,0 +1,5 @@
+const configuration = {
+  instagram_token: 'YOUR_ACCESS_TOKEN', // https://rudrastyh.com/tools/access-token
+};
+
+export default configuration;

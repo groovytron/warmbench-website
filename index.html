@@ -14,11 +14,11 @@
       <div class="row">
           <div class="col m12 s12">
             <ul class="tabs">
-              <li class="tab col m3"><a href="#biography">Biography</a></li>
-              <li class="tab col m3"><a href="#music">Music</a></li>
-              <li class="tab col m3"><a href="#photos">Photos</a></li>
-              <li class="tab col m3"><a href="#dates">Dates</a></li>
-              <li class="tab col m3"><a href="#contact">Contact</a></li>
+              <li class="tab col m2"><a href="#biography">Biography</a></li>
+              <li class="tab col m2"><a href="#music">Music</a></li>
+              <li class="tab col m2"><a href="#pictures">Pictures</a></li>
+              <li class="tab col m2"><a href="#dates">Dates</a></li>
+              <li class="tab col m2"><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <div id="biography" class="col s12">
@@ -56,10 +56,44 @@
           </div>
           <div id="music" class="col s12">
             <h2>Music</h2>
-            <p>Coming soon</p>
+            <div class="col offset-m5 m5 offset-s4">
+              <a href="https://www.soundcloud.com">
+                <img
+                  id="soundcloud-logo"
+                  class="social-logo"
+                  src="images/soundcloud.svg"
+                  alt="Soundcloud logo and profile page link"
+                >
+              </a>
+            </div>
           </div>
-          <div id="photos" class="col s12">
-            <h2>Photos</h2>
+          <div id="pictures" class="col s12">
+            <h2>Pictures</h2>
+            <div class="pictures">
+              <div class="row">
+                <div class="col offset-m4 m2 offset-s1">
+                  <a href="https://www.instagram.com/warm_bench/">
+                    <img
+                      id="instagram-logo"
+                      class="social-logo"
+                      src="images/instagram.svg"
+                      alt="Instagram logo and profile page link"
+                    >
+                  </a>
+                </div>
+                <div class="col m5">
+                  <a href="https://www.facebook.com/Warm-Bench-1543207285968672/">
+                    <img
+                      id="facebook-logo"
+                      class="social-logo"
+                      src="images/facebook.svg"
+                      alt="Facebook logo and profile page link"
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div id="instafeed"></div>
           </div>
           <div id="dates" class="col s12">
             <h2>Upcoming lives</h2>
@@ -180,7 +214,6 @@
               </tbody>
               </tbody>
             </table>
-
           </div>
           <div id="contact" class="col s12">
             <h2>Contact</h2>
@@ -189,16 +222,37 @@
     </div>
   </main>
   <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col 16 s12">
-          <h5>Footer content</h5>
-        </div>
-      </div>
-    </div>
     <div class="footer-copyright">
-      <div class="container">
-        © 2017 Copyright Text
+      <div class="container center-align">
+        <div class="row">
+          <a href="https://www.facebook.com/Warm-Bench-1543207285968672/">
+            <img
+              id="facebook-logo-footer"
+              class="social-logo-footer"
+              src="images/facebook.svg"
+              alt="Facebook logo and profile page link"
+            >
+          </a>
+          <a href="https://www.instagram.com/warm_bench/">
+            <img
+              id="instagram-logo-footer"
+              class="social-logo-footer"
+              src="images/instagram.svg"
+              alt="Instagram logo and profile page link"
+            >
+          </a>
+          <a href="https://www.soundcloud.com">
+            <img
+              id="soundcloud-logo-footer"
+              class="social-logo-footer"
+              src="images/soundcloud.svg"
+              alt="Soundcloud logo and profile page link"
+            >
+          </a>
+        </div>
+        <div class="row">
+          © 2017 Warm Bench
+        </div>
       </div>
     </div>
   </footer>

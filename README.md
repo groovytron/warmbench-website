@@ -15,3 +15,7 @@ You can launch one of these commands depending on what you want to do:
   then watches for changes in these latter. Everything is recompiled
   and the browser page is reloaded automatically at every modification.
   _Use this command if you want to develop_.
+
+
+Vector based social networks images are from the
+[SuperTinyIcons](https://github.com/edent/SuperTinyIcons) project.
