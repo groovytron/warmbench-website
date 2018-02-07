@@ -12,10 +12,21 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    // background-color: #000;
 }
 
 main {
     flex: 1 0 auto;
+    background-color: #000;
+    color: #fff;
+}
+
+.page-footer {
+    background-color: #fff;
+}
+
+.page-footer .footer-copyright {
+    color: #000;
 }
 
 #banner-logo {
