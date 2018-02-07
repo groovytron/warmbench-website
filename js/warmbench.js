@@ -15,9 +15,9 @@ import 'materialize-css/dist/js/materialize.js';
 function updateBannerImage() {
   var bannerImg = document.getElementById('banner-logo');
   if (screen.width < 500) {
-    bannerImg.src = '/images/warm_bench_white-logo-mobile.png';
+    bannerImg.src = 'images/warm_bench_white-logo-mobile.png';
   } else {
-    bannerImg.src = '/images/warm_bench_white-logo-1920x400.png';
+    bannerImg.src = 'images/warm_bench_white-logo-1920x400.png';
   }
 }
 
