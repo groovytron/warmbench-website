@@ -3,7 +3,7 @@ const path = require('path');
 const config = {
   entry: './js/warmbench.js',
   output: {
-    filename: 'webpack.bundle.js'
+    filename: 'webpack.bundle.js',
   },
   module: {
     rules: [
@@ -12,10 +12,10 @@ const config = {
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
-        }
-      }
-    ]
-  }
-}
+        },
+      },
+    ],
+  },
+};
 
 module.exports = config;

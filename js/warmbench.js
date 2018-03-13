@@ -21,10 +21,10 @@ function updateBannerImage() {
   }
 }
 
-window.onload = event => {
+window.onload = (event) => {
   updateBannerImage();
 };
 
-window.onresize = event => {
+window.onresize = (event) => {
   updateBannerImage();
 };
