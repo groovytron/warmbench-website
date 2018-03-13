@@ -6,43 +6,50 @@ $primary-color: #000;
 $primary-color-light: #006600;
 
 // Materialize
-@import "node_modules/materialize-css/sass/materialize";
+@import 'node_modules/materialize-css/sass/materialize';
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    // background-color: #000;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  // background-color: #000;
 }
 
 main {
-    flex: 1 0 auto;
-    background-color: #000;
-    color: #fff;
+  flex: 1 0 auto;
+  background-color: #000;
+  color: #fff;
 }
 
 .page-footer {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .page-footer .footer-copyright {
-    color: #000;
+  color: #000;
 }
 
 #banner-logo {
-    width: 100%;
-    margin: 0 auto 0 auto;
-    display: block;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  display: block;
 }
 
-.social-logo {
-    width: 100px;
+.social-logo,
+.music-logo {
+  width: 100px;
 }
 
 .social-logo-footer {
-    width: 8vh;
+  width: 8vh;
 }
 
 .navbar-container {
   background-color: #fff;
+}
+
+@media screen and (min-width: 500px) {
+  .music-logo {
+    margin-bottom: 20px;
+  }
 }
